@@ -24,6 +24,7 @@ public class LoginPageTest extends TestBase{
     ) {
         loginPage.login(username);
         String url = driver.getCurrentUrl();
+        assertEquals(expectedUrl, url);
     }
 
     @ParameterizedTest
